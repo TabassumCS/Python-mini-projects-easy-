@@ -51,3 +51,6 @@ elif answer == "right":
 
 else:
     print("Not a valid answer. Game Over")
+
+
+print("Thank you for playing", name)
