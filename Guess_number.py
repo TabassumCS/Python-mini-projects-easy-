@@ -32,8 +32,10 @@ while True:
     if user_NumberGuess == random_number:
         print("You have guessed the currect number!✅😄")
         break #stop the loop
+    elif user_NumberGuess > random_number:
+        print("You were above⬆️ the number")
     else:
-        print("Ops, that is wrong!")
+        print("You were below⬇️ the number")
 
 print("You guessed the number in", guesses, "guesses")
 
