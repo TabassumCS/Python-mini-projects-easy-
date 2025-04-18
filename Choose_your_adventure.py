@@ -41,7 +41,11 @@ elif answer == "right":
         print("🔥You fell into fire. Game Over")
     
     elif answer == "blue":
-        print("You have found the gold chest. You Won!")
+        answer = input("There are two are 2 caves (left or right)")
+        if answer == 'left':
+            print("You have found a tresure chest. You won!")
+        elif answer == 'right':
+            print("You were eaten by a dragon. Game Over")
     else:
         print("Not a valid answer. Game Over")
 
