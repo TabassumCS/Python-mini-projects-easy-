@@ -1,4 +1,4 @@
-print("Adventure Game: The Lost Treasure")
+print("\nAdventure Game: The Lost Treasure")
 print("You find yourself standing at the entrance\n" \
 "of a dark and mysterious cave, the air thick with \n" \
 "the scent of earth and moss. Legend has it that a \n" \
@@ -15,27 +15,35 @@ if answer == "left":
     print("🛤️ Left Path – The Narrow Descent\n" \
     "You crawl through the tight space.\n"
     "It's dark and damp.\n"
-    "Suddenly, a giant serpent blocks your way. but its sleeping\n" \
-    "Do you [walk] or [run]?")
+    "Suddenly, a giant serpent blocks your way. but its sleeping\n" )
+    answer = input("Do you [walk] or [run]?")
     if answer == "walk":
-        print()
+        print("You walked slowly but stepped on the serpent and was eaten. Game over")
     elif answer == "run":
-        print()
+        print("You ran out quickly but fell off the cliff and died. Game Over")
     else:
         print("Not a valid answer. Game Over")
 elif answer == "middle":
     print("🛶 Middle Path: Underground Lake\n" \
-    "A calm lake glows with faint blue light. A boat floats silently\n" \
-    "Do you want to [swim] or [ride] the boat.")
+    "A calm lake glows with faint blue light. A boat floats silently\n" )
+    answer = input("Do you want to [swim] or [ride] the boat.")
     if answer == "swim":
         print("An angry shark attacked you. Game over💀")
     elif answer == "ride":
-        print()
+        print("🪙🌟You rode the boat and found a tresure cave. You Won!!!!!!!")
     else:
         print("Not a valid answer. Game Over")
 
 
 elif answer == "right":
-    print()
+    answer = input("There is a red and blue door, which one do you choose")
+    if answer == "red":
+        print("🔥You fell into fire. Game Over")
+    
+    elif answer == "blue":
+        print("You have found the gold chest. You Won!")
+    else:
+        print("Not a valid answer. Game Over")
+
 else:
     print("Not a valid answer. Game Over")
